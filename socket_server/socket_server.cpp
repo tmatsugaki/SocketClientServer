@@ -23,7 +23,7 @@ Server::Server(std::string socket_name, boost::asio::io_service& io_service)
 
 void Server::start()
 {
-    std::cout << "start " << std::endl;
+    spdlog::info("start");
     start_accept();
 }
 
@@ -31,7 +31,7 @@ void Server::start()
 // ※非同期でもアクセプト待ちで同期処理されるので、ソケットは必ず別のスレッドで実行すること。
 void Server::start_accept()
 {
-    std::cout << "start_accept" << std::endl;
+    spdlog::info("start_accept");
     acceptor_.async_accept(
         socket_,
         boost::bind(&Server::on_accept, this, boost::asio::placeholders::error));
@@ -40,7 +40,7 @@ void Server::start_accept()
 // 接続待機完了
 void Server::on_accept(const boost::system::error_code& error)
 {
-    std::cout << "on_accept" << std::endl;
+    spdlog::info("on_accept");
     if (! error) {
 #if (PROCESS_COMMAND == true)
         start_receive();
@@ -56,7 +56,7 @@ void Server::on_accept(const boost::system::error_code& error)
     } else {
         error_code = error;
         // ログを残す
-        std::cerr << "accept failed: " << error.message() << std::endl;
+        spdlog::warn("accept failed: %s", error.message());
         socket_.close();
         start();
     }
@@ -66,7 +66,7 @@ void Server::on_accept(const boost::system::error_code& error)
 // メッセージ受信
 void Server::start_receive()
 {
-    std::cout << "start_receive" << std::endl;
+    spdlog::info("start_receive");
     // インスタンス変数としてバッファを使用しない様に、ここでシェアードポインタのストリームバッファ作成する。
     boost::shared_ptr<boost::asio::streambuf> receive_data(new boost::asio::streambuf());
     async_read_until(socket_,
@@ -81,7 +81,7 @@ void Server::start_receive()
 // received_data : 受信したデータ
 void Server::on_receive(const boost::system::error_code& error, boost::shared_ptr<boost::asio::streambuf> received_data)
 {
-    std::cout << "on_receive" << std::endl;
+    spdlog::info("on_receive");
     if (! error) {
         // 今は１次メッセージを使用しない。
         std::string command = boost::asio::buffer_cast<const char*>(received_data->data());
@@ -96,14 +96,14 @@ void Server::on_receive(const boost::system::error_code& error, boost::shared_pt
     } else {
         error_code = error;
         // ログを残す
-        std::cerr << "on_receive() Error" << error.value() << std::endl;
+        spdlog::warn("on_receive() Error %d", error.value());
 //        delete this;
     }
 }
 #endif
 
 void Server::on_send(const boost::system::error_code& error, boost::shared_ptr<std::string> response_data) {
-    std::cerr << "on_send" << std::endl;
+    spdlog::info("on_send");
     // Continue with the next read
     socket_.close();
     start();

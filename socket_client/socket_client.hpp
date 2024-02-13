@@ -3,6 +3,10 @@
 #include <boost/bind/bind.hpp>
 #include <boost/shared_ptr.hpp>
 
+#include <spdlog/spdlog.h>
+#include <spdlog/cfg/env.h>
+#include <spdlog/fmt/ostr.h>
+
 class Client {
 
 public:

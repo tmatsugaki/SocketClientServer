@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
         break;
     }
     if (rc != 0) {
-        std::cerr << "Usage: client <command> [1-8]" << std::endl;
+        spdlog::warn("Usage: client <command> [1-8]");
     }
     return rc;
 }

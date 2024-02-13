@@ -3,6 +3,10 @@
 #include <boost/bind/bind.hpp>
 #include <boost/shared_ptr.hpp>
 
+#include <spdlog/spdlog.h>
+#include <spdlog/cfg/env.h>
+#include <spdlog/fmt/ostr.h>
+
 /******************************************************************************
  ※ リスンソケットはアクセプト待ちで同期処理されるので、原則的には別のスレッドでの実行となる。
  ※ １次メッセージを処理しない場合は、start_receive(), on_receive() を使用せず、

@@ -27,7 +27,7 @@ void Client::send(char *command_str)
 {
     char buff[256];
     snprintf(buff, sizeof(buff), "%s\n", command_str);
-    std::cout << "send(" << buff << ")" << std::endl;
+    spdlog::info("send(%s)", buff);
     boost::shared_ptr<std::string> data(new std::string(buff));
 
     command = atoi(command_str);
@@ -39,14 +39,14 @@ void Client::send(char *command_str)
 void Client::on_send(const boost::system::error_code& error, boost::shared_ptr<std::string> data)
 {
     if (! error) {
-        std::cout << "send ok" << std::endl;
+        spdlog::info("send ok");
         boost::shared_ptr<boost::asio::streambuf> receive_data(new boost::asio::streambuf());
 
         // shared_ptr のデータをハンドラに bind してローカル変数扱いとする。
         boost::asio::async_read_until(socket_, *receive_data, '\n',
             boost::bind(&Client::on_receive, this, boost::asio::placeholders::error, receive_data));
     } else {
-        std::cout << "send error: " << error.message() << std::endl;
+        spdlog::warn("send error: %s", error.message());
     }
 }
 
@@ -54,8 +54,7 @@ void Client::on_receive(const boost::system::error_code& error, boost::shared_pt
 {
     if (! error) {
         std::string json_str = boost::asio::buffer_cast<const char*>(data->data());
-        std::cout << "receive ok :" << std::endl;
-        std::cout << json_str << std::endl;
+        spdlog::info("receive ok :%s", json_str);
 
         std::stringstream ss(json_str);
         switch (command) {
@@ -157,6 +156,6 @@ void Client::on_receive(const boost::system::error_code& error, boost::shared_pt
             break;
         }
     } else {
-        std::cout << "receive error: " << error.message() << std::endl;
+        spdlog::warn("receive error: %s", error.message());
     }
 }
