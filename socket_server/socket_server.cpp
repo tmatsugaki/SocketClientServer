@@ -56,7 +56,7 @@ void Server::on_accept(const boost::system::error_code& error)
     } else {
         error_code = error;
         // ログを残す
-        spdlog::warn("accept failed: %s", error.message());
+        spdlog::warn("accept failed: {0}", error.message());
         socket_.close();
         start();
     }
@@ -96,7 +96,7 @@ void Server::on_receive(const boost::system::error_code& error, boost::shared_pt
     } else {
         error_code = error;
         // ログを残す
-        spdlog::warn("on_receive() Error %d", error.value());
+        spdlog::warn("on_receive() Error {0}", error.value());
 //        delete this;
     }
 }

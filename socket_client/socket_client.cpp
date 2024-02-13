@@ -27,7 +27,7 @@ void Client::send(char *command_str)
 {
     char buff[256];
     snprintf(buff, sizeof(buff), "%s\n", command_str);
-    spdlog::info("send(%s)", buff);
+    spdlog::info("send({0})", buff);
     boost::shared_ptr<std::string> data(new std::string(buff));
 
     command = atoi(command_str);
@@ -46,7 +46,7 @@ void Client::on_send(const boost::system::error_code& error, boost::shared_ptr<s
         boost::asio::async_read_until(socket_, *receive_data, '\n',
             boost::bind(&Client::on_receive, this, boost::asio::placeholders::error, receive_data));
     } else {
-        spdlog::warn("send error: %s", error.message());
+        spdlog::warn("send error: {0}", error.message());
     }
 }
 
@@ -54,7 +54,7 @@ void Client::on_receive(const boost::system::error_code& error, boost::shared_pt
 {
     if (! error) {
         std::string json_str = boost::asio::buffer_cast<const char*>(data->data());
-        spdlog::info("receive ok :%s", json_str);
+        spdlog::info("receive ok :\n{0}", json_str);
 
         std::stringstream ss(json_str);
         switch (command) {
@@ -156,6 +156,6 @@ void Client::on_receive(const boost::system::error_code& error, boost::shared_pt
             break;
         }
     } else {
-        spdlog::warn("receive error: %s", error.message());
+        spdlog::warn("receive error: {0}", error.message());
     }
 }
