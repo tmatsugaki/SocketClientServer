@@ -1,12 +1,13 @@
+#############################################################################################################
 [OS]
 ![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)
-
+#############################################################################################################
 [Packages]
 sudo apt install -y libboost-all-dev/jammy
 sudo apt install -y libopencv-dev/jammy
 sudo apt install -y libcereal-dev/jammy
 sudo apt install -y libspdlog-dev/jammy
-
+#############################################################################################################
 [VNC Server for Sonoma]
 0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる
 https://daeudaeu.com/raspberry-pi-vnc-err/#confirm
@@ -37,7 +38,6 @@ To start VNC Server in Service Mode, run the following command as root:
 To start VNC Server in User Mode, run the following command:
 
   vncserver-x11
-
 
 2.Listen ポート確認(TCP)
 
@@ -89,6 +89,6 @@ Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
-
+#############################################################################################################
 [VSCode on Windows]
 https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc
