@@ -7,4 +7,4 @@ find_package(Boost 1.74.0 REQUIRED
              COMPONENTS iostreams serialization date_time system)
 
 add_executable(server socket_server.cpp main.cpp)
-target_link_libraries(server PRIVATE ${Boost_LIBRARIES} pthread) # pthread: OpenCVでは必須、bullseye環境では Boost 使用時必須
+target_link_libraries(server PRIVATE ${Boost_LIBRARIES} pthread fmt) # pthread: OpenCVでは必須、bullseye環境では Boost 使用時必須
