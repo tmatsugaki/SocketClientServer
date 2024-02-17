@@ -1,38 +1,24 @@
-###################################################################################
-
-【OS】
-
-![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)
-
-###################################################################################
-
-【Packages】
-
-sudo apt install -y build-essential
-
-sudo apt install -y cmake-dev
-
-sudo apt install -y libboost-all-dev
-
-sudo apt install -y libopencv-dev
-
-sudo apt install -y libcereal-dev
-
-sudo apt install -y libspdlog-dev
-
-###################################################################################
-
-【VNC Server for Sonoma】
-
-0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる
+###################################################################################<br>
+【OS】<br>
+![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)<br>
+###################################################################################<br>
+【Packages】<br>
+sudo apt install -y build-essential<br>
+sudo apt install -y cmake-dev<br>
+sudo apt install -y libboost-all-dev<br>
+sudo apt install -y libopencv-dev<br>
+sudo apt install -y libcereal-dev<br>
+sudo apt install -y libspdlog-dev<br>
+###################################################################################<br>
+【VNC Server for Sonoma】<br>
+0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
 https://daeudaeu.com/raspberry-pi-vnc-err/#confirm
 RealVNC のオプション
 Security
   Encription: Prefer off
   Authrntication: VNC Passwd
 
-1.vncserver起動
-
+1.vncserver起動<br>
 pi@bullseye:~ $ vncserver
 
 See https://www.realvnc.com for information on VNC.
