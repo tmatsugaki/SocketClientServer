@@ -5,10 +5,10 @@
 #######################################################################################################
 [Packages]
 
-sudo apt install -y libboost-all-dev/jammy\n
-sudo apt install -y libopencv-dev/jammy\n
-sudo apt install -y libcereal-dev/jammy\n
-sudo apt install -y libspdlog-dev/jammy\n
+sudo apt install -y libboost-all-dev/jammy
+sudo apt install -y libopencv-dev/jammy
+sudo apt install -y libcereal-dev/jammy
+sudo apt install -y libspdlog-dev/jammy
 #######################################################################################################
 [VNC Server for Sonoma]
 
