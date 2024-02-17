@@ -116,15 +116,25 @@ https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc
 【VSCode　機能拡張】
 
 WSL (Microsoft)
+
 C/C++v1.18.5 (Microsoft)
+
 C/C++ Extension Packv1.3.0 (Microsoft)
+
 C/C++ Themesv2.0.0 (Microsoft)
+
 CMake Toolsv1.17.15 (Microsoft)
+
 Japanese Language Pack for Visual Studio (Microsoft)
+
 Makefile Tools v0.8.22 プレビュー (Microsoft)
+
 Printv0.11.18 (Microsoft)
+
 Pylancev2024.2.2 (Microsoft)
+
 Pythonv2024.0.1 (Microsoft)
+
 Python Debuggerv2024.0.0 (Microsoft)
 
 ###################################################################################
