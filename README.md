@@ -93,7 +93,7 @@ Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 #######################################################################################################
-[VSCode on Windows]
+[VSCode for Windows]
 
 https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc
 #######################################################################################################
