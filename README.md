@@ -8,13 +8,17 @@
 
 【Packages】
 
-sudo apt install -y libboost-all-dev/jammy
+sudo apt install -y build-essential
 
-sudo apt install -y libopencv-dev/jammy
+sudo apt install -y cmake-dev
 
-sudo apt install -y libcereal-dev/jammy
+sudo apt install -y libboost-all-dev
 
-sudo apt install -y libspdlog-dev/jammy
+sudo apt install -y libopencv-dev
+
+sudo apt install -y libcereal-dev
+
+sudo apt install -y libspdlog-dev
 
 ###################################################################################
 
@@ -106,5 +110,21 @@ Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 【VSCode for Windows】
 
 https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc
+
+###################################################################################
+
+【VSCode　機能拡張】
+
+WSL (Microsoft)
+C/C++v1.18.5 (Microsoft)
+C/C++ Extension Packv1.3.0 (Microsoft)
+C/C++ Themesv2.0.0 (Microsoft)
+CMake Toolsv1.17.15 (Microsoft)
+Japanese Language Pack for Visual Studio (Microsoft)
+Makefile Tools v0.8.22 プレビュー (Microsoft)
+Printv0.11.18 (Microsoft)
+Pylancev2024.2.2 (Microsoft)
+Pythonv2024.0.1 (Microsoft)
+Python Debuggerv2024.0.0 (Microsoft)
 
 ###################################################################################
