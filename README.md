@@ -83,7 +83,6 @@ Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br>
 ###################################################################################<br>
 ## VSCode　機能拡張
-<ul>
 <li>WSL (Microsoft)</li>
 <li>C/C++v1.18.5 (Microsoft)</li>
 <li>C/C++ Extension Packv1.3.0 (Microsoft)</li>
@@ -95,5 +94,4 @@ Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 <li>Pylancev2024.2.2 (Microsoft)</li>
 <li>Pythonv2024.0.1 (Microsoft)</li>
 <li>Python Debuggerv2024.0.0 (Microsoft)</li>
-</ul>
 ###################################################################################<br>
