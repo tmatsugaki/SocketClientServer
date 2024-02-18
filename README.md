@@ -12,9 +12,9 @@ sudo apt install -y libspdlog-dev<br>
 ・　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a>
 
 RealVNC のオプション
-Security
+<tt>Security
   Encription: Prefer off
-  Authrntication: VNC Passwd
+  Authrntication: VNC Passwd</tt>
 
 ### 1.vncserver起動
 pi@bullseye:~ $ vncserver
