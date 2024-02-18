@@ -94,7 +94,7 @@ https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br>
 ###################################################################################<br>
 【VSCode　機能拡張】<br>
 <ul>
-WSL (Microsoft)
+<li>WSL (Microsoft)</li>
 C/C++v1.18.5 (Microsoft)
 C/C++ Extension Packv1.3.0 (Microsoft)
 C/C++ Themesv2.0.0 (Microsoft)
