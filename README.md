@@ -98,4 +98,5 @@ Python Debuggerv2024.0.0 (Microsoft)<br>
 ## USB デバイスを接続する
 <a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb#install-the-usbipd-win-project">Microsoft</a>
 ※Windows11 にて試行中(USBデバイスを bind/attach しただけでは Linux 上でデバイスは作成されません。)
+<a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf">wsl2_linux_kernel_usbcam_enable_conf</a>
 
