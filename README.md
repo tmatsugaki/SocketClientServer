@@ -22,9 +22,9 @@ See https://www.realvnc.com for information on VNC.
 <br>To start an instance of VNC Server in Virtual Mode, run the following command:<br>
   <b>vncserver-virtual</b>
 <br>To start the VNC Server in Virtual Mode daemon, run the following command as root:<br>
-  <b>/etc/vnc/vncservice start vncserver-virtuald</b>
+  /etc/vnc/vncservice start <b>vncserver-virtuald</b>
 <br>To start VNC Server in Service Mode, run the following command as root:<br>
-  <b>/etc/vnc/vncservice start vncserver-x11-serviced</b>
+  /etc/vnc/vncservice start <b>vncserver-x11-serviced</b>
 <br>To start VNC Server in User Mode, run the following command:<br>
   <b>vncserver-x11</b>
 
