@@ -3,12 +3,13 @@
 ![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)<br>
 ###################################################################################<br>
 【Packages】<br>
-<code>sudo apt install -y build-essential<br>
+<code>
+sudo apt install -y build-essential<br>
 sudo apt install -y cmake-dev<br>
 sudo apt install -y libboost-all-dev<br>
 sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
-sudo apt install -y libspdlog-dev<br></code>
+sudo apt install -y libspdlog-dev<br></code><br>
 ###################################################################################<br>
 【VNC Server for Sonoma】<br>
 0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
@@ -41,7 +42,8 @@ udp        0      0 0.0.0.0:5999            0.0.0.0:*
 udp6       0      0 :::5999                 :::*         </code><br>
 <br>
 3.vncpasswd<br>
-<code>pi@bullseye:~ $ vncpasswd
+<code>
+pi@bullseye:~ $ vncpasswd
 VNC(R) Password Utility 7.5.1 (r50075) ARMv8-A (May 30 2023 13:19:26)
 Copyright (C) RealVNC Ltd.
 RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
@@ -62,7 +64,6 @@ Mode:
   -file FILE  Set the password in the file FILE.
   -print      Print the password to the console in a form suitable for
               configuration files and policy templates.
-
 Options:
   -type TYPE  Set the password of type TYPE. VNC Server may support various
               types of password, including "ViewOnlyPassword",
@@ -73,6 +74,7 @@ Options:
   -legacy     Set the password using the legacy plaintext-equivalent
               (obfuscated) form, rather than as a salted hash.
               Not recommended.
+
 pi@bullseye:~ $ sudo vncpasswd -service
 Setting "Password" VNC parameter for Service Mode server
 Password:
