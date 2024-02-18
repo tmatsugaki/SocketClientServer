@@ -21,16 +21,16 @@ pi@bullseye:~ $ vncserver<br>
 See https://www.realvnc.com for information on VNC.
 
 #### To start an instance of VNC Server in Virtual Mode, run the following command:<br>
-  <b>vncserver-virtual</b>
+  vncserver-virtual
 
 #### To start the VNC Server in Virtual Mode daemon, run the following command as root:<br>
-  /etc/vnc/vncservice start <b>vncserver-virtuald</b>
+  /etc/vnc/vncservice start vncserver-virtuald
 
 #### To start VNC Server in Service Mode, run the following command as root:<br>
-  /etc/vnc/vncservice start <b>vncserver-x11-serviced</b>
+  /etc/vnc/vncservice start vncserver-x11-serviced
 
 #### To start VNC Server in User Mode, run the following command:<br>
-  <b>vncserver-x11</b>
+  vncserver-x11
 
 ### 2.Listen ポート確認(TCP)
 pi@bullseye:/etc $ netstat -ant | fgrep 59 -
