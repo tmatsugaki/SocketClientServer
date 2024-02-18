@@ -3,45 +3,41 @@
 ![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)<br>
 ###################################################################################<br>
 【Packages】<br>
+<tt>
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake-dev<br>
 sudo apt install -y libboost-all-dev<br>
 sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br>
+</tt>
 ###################################################################################<br>
 【VNC Server for Sonoma】<br>
+
 0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
+<tt>
 https://daeudaeu.com/raspberry-pi-vnc-err/#confirm
-RealVNC のオプション
-Security
-  Encription: Prefer off
-  Authrntication: VNC Passwd
-
+RealVNC のオプション<br>
+Security<br>
+  Encription: Prefer off<br>
+  Authrntication: VNC Passwd<br>
+</tt>
 1.vncserver起動<br>
+<tt>
 pi@bullseye:~ $ vncserver
-
 See https://www.realvnc.com for information on VNC.
-
 To start an instance of VNC Server in Virtual Mode, run the following command:
-
   vncserver-virtual
+To start the VNC Server in Virtual Mode daemon, run the following command as root:<br>
+  /etc/vnc/vncservice start vncserver-virtuald<br>
+To start VNC Server in Service Mode, run the following command as root:<br>
+  /etc/vnc/vncservice start vncserver-x11-serviced<br>
+To start VNC Server in User Mode, run the following command:<br>
+  vncserver-x11<br>
+</tt>
 
-To start the VNC Server in Virtual Mode daemon, run the following command as
-root:
-
-  /etc/vnc/vncservice start vncserver-virtuald
-
-To start VNC Server in Service Mode, run the following command as root:
-
-  /etc/vnc/vncservice start vncserver-x11-serviced
-
-To start VNC Server in User Mode, run the following command:
-
-  vncserver-x11
-
-2.Listen ポート確認(TCP)
-
+2.Listen ポート確認(TCP)<br>
+<tt>
 pi@bullseye:/etc $ netstat -ant | fgrep 59 -
 tcp        0      0 0.0.0.0:5999            0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:5900            0.0.0.0:*               LISTEN     
@@ -50,9 +46,10 @@ tcp6       0      0 :::5900                 :::*                    LISTEN
 pi@bullseye:/etc $ netstat -anu | fgrep 59 -
 udp        0      0 0.0.0.0:5999            0.0.0.0:*                          
 udp6       0      0 :::5999                 :::*         
+</tt>
 
-3.vncpasswd
-
+3.vncpasswd<br>
+<tt>
 pi@bullseye:~ $ vncpasswd
 VNC(R) Password Utility 7.5.1 (r50075) ARMv8-A (May 30 2023 13:19:26)
 Copyright (C) RealVNC Ltd.
@@ -90,37 +87,23 @@ Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
-
-###################################################################################
-
-【VSCode for Windows】
-
-https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc
-
-###################################################################################
-
-【VSCode　機能拡張】
-
+</tt>
+###################################################################################<br>
+【VSCode for Windows】<br>
+https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br>
+###################################################################################<br>
+【VSCode　機能拡張】<br>
+<ul>
 WSL (Microsoft)
-
 C/C++v1.18.5 (Microsoft)
-
 C/C++ Extension Packv1.3.0 (Microsoft)
-
 C/C++ Themesv2.0.0 (Microsoft)
-
 CMake Toolsv1.17.15 (Microsoft)
-
 Japanese Language Pack for Visual Studio (Microsoft)
-
 Makefile Tools v0.8.22 プレビュー (Microsoft)
-
 Printv0.11.18 (Microsoft)
-
 Pylancev2024.2.2 (Microsoft)
-
 Pythonv2024.0.1 (Microsoft)
-
 Python Debuggerv2024.0.0 (Microsoft)
-
-###################################################################################
+</ul>
+###################################################################################<br>
