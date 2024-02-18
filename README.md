@@ -2,7 +2,7 @@
 【OS】<br>
 ![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)<br>
 ###################################################################################<br>
-【Packages】<br>
+【Packages】
 <code>
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake-dev<br>
