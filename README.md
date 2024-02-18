@@ -96,5 +96,5 @@ Pylancev2024.2.2 (Microsoft)<br>
 Pythonv2024.0.1 (Microsoft)<br>
 Python Debuggerv2024.0.0 (Microsoft)<br>
 ## USB デバイスを接続する
-<a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb#install-the-usbipd-win-project">ご参考</a>
+<a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb#install-the-usbipd-win-project">Microsoft</a>
 ※Windows11 にて試行中
