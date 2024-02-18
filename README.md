@@ -3,27 +3,23 @@
 ![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)<br>
 ###################################################################################<br>
 【Packages】<br>
-<tt>
-sudo apt install -y build-essential<br>
+<code>sudo apt install -y build-essential<br>
 sudo apt install -y cmake-dev<br>
 sudo apt install -y libboost-all-dev<br>
 sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
-sudo apt install -y libspdlog-dev<br>
-</tt>
+sudo apt install -y libspdlog-dev<br></code>
 ###################################################################################<br>
 【VNC Server for Sonoma】<br>
 0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
-<tt>
-<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a>
+<code><a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a></code>
 RealVNC のオプション<br>
-Security<br>
+<code>Security<br>
   Encription: Prefer off<br>
   Authrntication: VNC Passwd<br>
-</tt>
+</code>
 1.vncserver起動<br>
-<tt>
-pi@bullseye:~ $ vncserver
+<code>pi@bullseye:~ $ vncserver
 See https://www.realvnc.com for information on VNC.
 To start an instance of VNC Server in Virtual Mode, run the following command:
   vncserver-virtual
@@ -32,9 +28,8 @@ To start the VNC Server in Virtual Mode daemon, run the following command as roo
 To start VNC Server in Service Mode, run the following command as root:<br>
   /etc/vnc/vncservice start vncserver-x11-serviced<br>
 To start VNC Server in User Mode, run the following command:<br>
-  vncserver-x11<br>
-</tt>
-
+  vncserver-x11<br></code>
+<br>
 2.Listen ポート確認(TCP)<br>
 <tt>pi@bullseye:/etc $ netstat -ant | fgrep 59 -
 tcp        0      0 0.0.0.0:5999            0.0.0.0:*               LISTEN     
