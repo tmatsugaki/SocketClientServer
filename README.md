@@ -19,6 +19,7 @@ RealVNC のオプション
 ### 1.vncserver起動
 pi@bullseye:~ $ vncserver<br>
 See https://www.realvnc.com for information on VNC.
+
 <br>To start an instance of VNC Server in Virtual Mode, run the following command:<br>
   <b>vncserver-virtual</b>
 
