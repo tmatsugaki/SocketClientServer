@@ -99,3 +99,4 @@ Python Debuggerv2024.0.0 (Microsoft)<br>
 <a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb">USB デバイスを接続する</a>
 ※USBデバイスを bind/attach しただけでは Linux 上でデバイスは作成されません。
 <a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf">wsl2_linux_kernel_usbcam_enable_conf</a>
+<a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf/blob/main/linux-msft-wsl-5.10.102.1/config">カーネルコンフィギュレーション</a>
