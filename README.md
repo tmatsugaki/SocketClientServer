@@ -98,5 +98,8 @@ Python Debuggerv2024.0.0 (Microsoft)<br>
 ## USB デバイスを接続する
 <a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb">USB デバイスを接続する</a>
 ※USBデバイスを bind/attach しただけでは Linux 上でデバイスは作成されません。
-<a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf">wsl2_linux_kernel_usbcam_enable_conf</a>
-<a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf/blob/main/linux-msft-wsl-5.10.102.1/config">カーネルコンフィギュレーション</a>
+<a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf">wsl2_linux_kernel_usbcam_enable_conf</a><br>
+<a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf/blob/main/linux-msft-wsl-5.10.102.1/config">カーネルコンフィギュレーション</a><br>
+カーネル・ローダブルモジュール等の再構築が必要です。
+また、カメラの V4L2 の GStream に関わる部分はデリケートですので Windows11 の WSL2 で費やしたことが徒労に終わる可能性があります。
+ラズパイ&VNC、PC上の ubuntu、macOS を使用することを推奨します。
