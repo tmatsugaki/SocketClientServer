@@ -82,7 +82,7 @@ Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 ## VSCode for Windows
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">VSCode+WSL+Ubuntu+gcc+gdb+gmake
-## VSCode　機能拡張
+## VSCode機能拡張
 WSL (Microsoft)<br>
 C/C++v1.18.5 (Microsoft)<br>
 C/C++ Extension Packv1.3.0 (Microsoft)<br>
