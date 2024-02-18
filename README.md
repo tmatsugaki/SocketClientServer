@@ -1,7 +1,5 @@
-###################################################################################<br>
 ## OS
 ![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)<br>
-###################################################################################<br>
 ## Packages
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake-dev<br>
@@ -9,9 +7,8 @@ sudo apt install -y libboost-all-dev<br>
 sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br>
-###################################################################################<br>
 ## VNC Server for Sonoma】
-<br>0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
+0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
 ・　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a>
 RealVNC のオプション<br>
 Security
@@ -78,20 +75,17 @@ Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
-###################################################################################<br>
 ## VSCode for Windows
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br>
-###################################################################################<br>
 ## VSCode　機能拡張
-<li>WSL (Microsoft)</li>
-<li>C/C++v1.18.5 (Microsoft)</li>
-<li>C/C++ Extension Packv1.3.0 (Microsoft)</li>
-<li>C/C++ Themesv2.0.0 (Microsoft)</li>
-<li>CMake Toolsv1.17.15 (Microsoft)</li>
-<li>Japanese Language Pack for Visual Studio (Microsoft)</li>
-<li>Makefile Tools v0.8.22 プレビュー (Microsoft)</li>
-<li>Printv0.11.18 (Microsoft)</li>
-<li>Pylancev2024.2.2 (Microsoft)</li>
-<li>Pythonv2024.0.1 (Microsoft)</li>
-<li>Python Debuggerv2024.0.0 (Microsoft)</li>
-###################################################################################<br>
+WSL (Microsoft)
+C/C++v1.18.5 (Microsoft)
+C/C++ Extension Packv1.3.0 (Microsoft)
+C/C++ Themesv2.0.0 (Microsoft)
+CMake Toolsv1.17.15 (Microsoft)
+Japanese Language Pack for Visual Studio (Microsoft)
+Makefile Tools v0.8.22 プレビュー (Microsoft)
+Printv0.11.18 (Microsoft)
+Pylancev2024.2.2 (Microsoft)
+Pythonv2024.0.1 (Microsoft)
+Python Debuggerv2024.0.0 (Microsoft)
