@@ -9,7 +9,7 @@ sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br>
 ## VNC Server
-### 0.(macOS) raspi-config の インターフェースオプションで RealVNC を macOS に適合させる
+### 0.(macOSのみ) raspi-config の インターフェースオプションで RealVNC を macOS に適合させる
 　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">ご参考</a>
 
 RealVNC のオプション
