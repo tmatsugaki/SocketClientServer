@@ -1,8 +1,8 @@
 ###################################################################################<br>
-【OS】<br>
+## OS
 ![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)<br>
 ###################################################################################<br>
-【Packages】
+## Packages
 <code>
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake-dev<br>
@@ -11,7 +11,7 @@ sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br></code><br>
 ###################################################################################<br>
-【VNC Server for Sonoma】<br>
+## VNC Server for Sonoma】
 <br>0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
 <code><a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a></code><br>
 RealVNC のオプション<br>
@@ -77,10 +77,10 @@ Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11</code>
 ###################################################################################<br>
-【VSCode for Windows】<br>
+## VSCode for Windows
 <code>https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br></code>
 ###################################################################################<br>
-【VSCode　機能拡張】<br>
+## VSCode　機能拡張
 <ul>
 <li>WSL (Microsoft)</li>
 <li>C/C++v1.18.5 (Microsoft)</li>
