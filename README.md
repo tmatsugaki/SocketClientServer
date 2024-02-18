@@ -1,4 +1,4 @@
-## OS
+## Raspberry Pi OS
 <a href="https://www.raspberrypi.com/software/">ダウンロード</a><br>
 <a href="https://www.raspberrypi.com/software/">![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)</a><br>
 ## Packages
@@ -97,3 +97,4 @@ Pythonv2024.0.1 (Microsoft)<br>
 Python Debuggerv2024.0.0 (Microsoft)<br>
 ## USB デバイスを接続する
 <a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb#install-the-usbipd-win-project">ご参考</a>
+※Windows11 にて試行中
