@@ -13,10 +13,9 @@ sudo apt install -y libspdlog-dev<br>
 </tt>
 ###################################################################################<br>
 【VNC Server for Sonoma】<br>
-
 0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
 <tt>
-https://daeudaeu.com/raspberry-pi-vnc-err/#confirm
+<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a>
 RealVNC のオプション<br>
 Security<br>
   Encription: Prefer off<br>
@@ -37,20 +36,17 @@ To start VNC Server in User Mode, run the following command:<br>
 </tt>
 
 2.Listen ポート確認(TCP)<br>
-<tt>
-pi@bullseye:/etc $ netstat -ant | fgrep 59 -
+<tt>pi@bullseye:/etc $ netstat -ant | fgrep 59 -
 tcp        0      0 0.0.0.0:5999            0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:5900            0.0.0.0:*               LISTEN     
 tcp6       0      0 :::5999                 :::*                    LISTEN     
 tcp6       0      0 :::5900                 :::*                    LISTEN     
 pi@bullseye:/etc $ netstat -anu | fgrep 59 -
 udp        0      0 0.0.0.0:5999            0.0.0.0:*                          
-udp6       0      0 :::5999                 :::*         
-</tt>
+udp6       0      0 :::5999                 :::*         </tt>
 
 3.vncpasswd<br>
-<tt>
-pi@bullseye:~ $ vncpasswd
+<tt>pi@bullseye:~ $ vncpasswd
 VNC(R) Password Utility 7.5.1 (r50075) ARMv8-A (May 30 2023 13:19:26)
 Copyright (C) RealVNC Ltd.
 RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
@@ -86,24 +82,23 @@ pi@bullseye:~ $ sudo vncpasswd -service
 Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
-Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
-</tt>
+Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11</tt>
 ###################################################################################<br>
 【VSCode for Windows】<br>
-https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br>
+<tt>https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br></tt>
 ###################################################################################<br>
 【VSCode　機能拡張】<br>
 <ul>
 <li>WSL (Microsoft)</li>
-C/C++v1.18.5 (Microsoft)
-C/C++ Extension Packv1.3.0 (Microsoft)
-C/C++ Themesv2.0.0 (Microsoft)
-CMake Toolsv1.17.15 (Microsoft)
-Japanese Language Pack for Visual Studio (Microsoft)
-Makefile Tools v0.8.22 プレビュー (Microsoft)
-Printv0.11.18 (Microsoft)
-Pylancev2024.2.2 (Microsoft)
-Pythonv2024.0.1 (Microsoft)
-Python Debuggerv2024.0.0 (Microsoft)
+<li>C/C++v1.18.5 (Microsoft)</li>
+<li>C/C++ Extension Packv1.3.0 (Microsoft)</li>
+<li>C/C++ Themesv2.0.0 (Microsoft)</li>
+<li>CMake Toolsv1.17.15 (Microsoft)</li>
+<li>Japanese Language Pack for Visual Studio (Microsoft)</li>
+<li>Makefile Tools v0.8.22 プレビュー (Microsoft)</li>
+<li>Printv0.11.18 (Microsoft)</li>
+<li>Pylancev2024.2.2 (Microsoft)</li>
+<li>Pythonv2024.0.1 (Microsoft)</li>
+<li>Python Debuggerv2024.0.0 (Microsoft)</li>
 </ul>
 ###################################################################################<br>
