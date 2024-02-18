@@ -12,13 +12,13 @@ sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br></code><br>
 ###################################################################################<br>
 【VNC Server for Sonoma】<br>
-0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
+<br>0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる<br>
 <code><a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a></code><br>
 RealVNC のオプション<br>
 <code>Security<br>
   Encription: Prefer off<br>
   Authrntication: VNC Passwd</code><br>
-<br>1.vncserver起動
+<br>1.vncserver起動<br>
 <code>pi@bullseye:~ $ vncserver
 See https://www.realvnc.com for information on VNC.
 To start an instance of VNC Server in Virtual Mode, run the following command:
@@ -29,7 +29,7 @@ To start VNC Server in Service Mode, run the following command as root:
   /etc/vnc/vncservice start vncserver-x11-serviced
 To start VNC Server in User Mode, run the following command:
   vncserver-x11<br></code><br>
-<br>2.Listen ポート確認(TCP)
+<br>2.Listen ポート確認(TCP)<br>
 <code>pi@bullseye:/etc $ netstat -ant | fgrep 59 -
 tcp        0      0 0.0.0.0:5999            0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:5900            0.0.0.0:*               LISTEN     
@@ -38,7 +38,7 @@ tcp6       0      0 :::5900                 :::*                    LISTEN
 pi@bullseye:/etc $ netstat -anu | fgrep 59 -
 udp        0      0 0.0.0.0:5999            0.0.0.0:*                          
 udp6       0      0 :::5999                 :::*         </code><br>
-<br>3.vncpasswd
+<br>3.vncpasswd<br>
 <code>pi@bullseye:~ $ vncpasswd
 VNC(R) Password Utility 7.5.1 (r50075) ARMv8-A (May 30 2023 13:19:26)
 Copyright (C) RealVNC Ltd.
