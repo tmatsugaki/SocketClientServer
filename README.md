@@ -7,8 +7,8 @@ sudo apt install -y libboost-all-dev<br>
 sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br>
-## VNC Server for macOS Sonoma
-### 0.raspi-config の インターフェースオプションで RealVNC をオンにし、下記で macOS(Sonoma)に適合させる
+## VNC Server
+### 0.(macOS) raspi-config の インターフェースオプションで RealVNC を macOS に適合させる
 ・　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">https://daeudaeu.com/raspberry-pi-vnc-err/#confirm</a>
 
 RealVNC のオプション
@@ -29,14 +29,14 @@ To start VNC Server in User Mode, run the following command:
   vncserver-x11
 
 ### 2.Listen ポート確認(TCP)
-<code>pi@bullseye:/etc $ netstat -ant | fgrep 59 -
+pi@bullseye:/etc $ netstat -ant | fgrep 59 -
 tcp        0      0 0.0.0.0:5999            0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:5900            0.0.0.0:*               LISTEN     
 tcp6       0      0 :::5999                 :::*                    LISTEN     
 tcp6       0      0 :::5900                 :::*                    LISTEN     
 pi@bullseye:/etc $ netstat -anu | fgrep 59 -
 udp        0      0 0.0.0.0:5999            0.0.0.0:*                          
-udp6       0      0 :::5999                 :::*         </code><br>
+udp6       0      0 :::5999                 :::*         <br>
 
 ### 3.vncpasswd
 pi@bullseye:~ $ vncpasswd
