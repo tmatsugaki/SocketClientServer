@@ -38,8 +38,8 @@ tcp6       0      0 :::5999                 :::*                    LISTEN
 tcp6       0      0 :::5900                 :::*                    LISTEN     
 pi@bullseye:/etc $ netstat -anu | fgrep 59 -
 udp        0      0 0.0.0.0:5999            0.0.0.0:*                          
-udp6       0      0 :::5999                 :::*         </code>
-
+udp6       0      0 :::5999                 :::*         </code><br>
+<br>
 3.vncpasswd<br>
 <code>pi@bullseye:~ $ vncpasswd
 VNC(R) Password Utility 7.5.1 (r50075) ARMv8-A (May 30 2023 13:19:26)
