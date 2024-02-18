@@ -83,14 +83,14 @@ Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 ## VSCode for Windows
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">VSCode+WSL+Ubuntu+gcc+gdb+gmake
 ## VSCode　機能拡張
-WSL (Microsoft)
-C/C++v1.18.5 (Microsoft)
-C/C++ Extension Packv1.3.0 (Microsoft)
-C/C++ Themesv2.0.0 (Microsoft)
-CMake Toolsv1.17.15 (Microsoft)
-Japanese Language Pack for Visual Studio (Microsoft)
-Makefile Tools v0.8.22 プレビュー (Microsoft)
-Printv0.11.18 (Microsoft)
-Pylancev2024.2.2 (Microsoft)
-Pythonv2024.0.1 (Microsoft)
-Python Debuggerv2024.0.0 (Microsoft)
+WSL (Microsoft)<br>
+C/C++v1.18.5 (Microsoft)<br>
+C/C++ Extension Packv1.3.0 (Microsoft)<br>
+C/C++ Themesv2.0.0 (Microsoft)<br>
+CMake Toolsv1.17.15 (Microsoft)<br>
+Japanese Language Pack for Visual Studio (Microsoft)<br>
+Makefile Tools v0.8.22 プレビュー (Microsoft)<br>
+Printv0.11.18 (Microsoft)<br>
+Pylancev2024.2.2 (Microsoft)<br>
+Pythonv2024.0.1 (Microsoft)<br>
+Python Debuggerv2024.0.0 (Microsoft)<br>
