@@ -19,13 +19,13 @@ RealVNC のオプション
 ### 1.vncserver起動
 pi@bullseye:~ $ vncserver<br>
 See https://www.realvnc.com for information on VNC.
-To start an instance of VNC Server in Virtual Mode, run the following command:<br>
+<br>To start an instance of VNC Server in Virtual Mode, run the following command:<br>
   <b>vncserver-virtual</b>
-To start the VNC Server in Virtual Mode daemon, run the following command as root:<br>
+<br>To start the VNC Server in Virtual Mode daemon, run the following command as root:<br>
   <b>/etc/vnc/vncservice start vncserver-virtuald</b>
-To start VNC Server in Service Mode, run the following command as root:<br>
+<br>To start VNC Server in Service Mode, run the following command as root:<br>
   <b>/etc/vnc/vncservice start vncserver-x11-serviced</b>
-To start VNC Server in User Mode, run the following command:<br>
+<br>To start VNC Server in User Mode, run the following command:<br>
   <b>vncserver-x11</b>
 
 ### 2.Listen ポート確認(TCP)
@@ -39,7 +39,7 @@ udp        0      0 0.0.0.0:5999            0.0.0.0:*
 udp6       0      0 :::5999                 :::*         <br>
 
 ### 3.vncpasswd
-pi@bullseye:~ $ vncpasswd
+pi@bullseye:~ $ vncpasswd<br>
 VNC(R) Password Utility 7.5.1 (r50075) ARMv8-A (May 30 2023 13:19:26)
 Copyright (C) RealVNC Ltd.
 RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
@@ -71,7 +71,7 @@ Options:
               (obfuscated) form, rather than as a salted hash.
               Not recommended.
 
-pi@bullseye:~ $ sudo vncpasswd -service
+pi@bullseye:~ $ sudo vncpasswd -service<br>
 Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
