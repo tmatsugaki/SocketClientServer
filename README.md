@@ -17,31 +17,31 @@ RealVNC のオプション<br>
 <code>Security<br>
   Encription: Prefer off<br>
   Authrntication: VNC Passwd<br>
-</code>
+</code><br>
 1.vncserver起動<br>
 <code>pi@bullseye:~ $ vncserver
 See https://www.realvnc.com for information on VNC.
 To start an instance of VNC Server in Virtual Mode, run the following command:
   vncserver-virtual
-To start the VNC Server in Virtual Mode daemon, run the following command as root:<br>
-  /etc/vnc/vncservice start vncserver-virtuald<br>
-To start VNC Server in Service Mode, run the following command as root:<br>
-  /etc/vnc/vncservice start vncserver-x11-serviced<br>
-To start VNC Server in User Mode, run the following command:<br>
+To start the VNC Server in Virtual Mode daemon, run the following command as root:
+  /etc/vnc/vncservice start vncserver-virtuald
+To start VNC Server in Service Mode, run the following command as root:
+  /etc/vnc/vncservice start vncserver-x11-serviced
+To start VNC Server in User Mode, run the following command:
   vncserver-x11<br></code>
 <br>
 2.Listen ポート確認(TCP)<br>
-<tt>pi@bullseye:/etc $ netstat -ant | fgrep 59 -
+<code>pi@bullseye:/etc $ netstat -ant | fgrep 59 -
 tcp        0      0 0.0.0.0:5999            0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:5900            0.0.0.0:*               LISTEN     
 tcp6       0      0 :::5999                 :::*                    LISTEN     
 tcp6       0      0 :::5900                 :::*                    LISTEN     
 pi@bullseye:/etc $ netstat -anu | fgrep 59 -
 udp        0      0 0.0.0.0:5999            0.0.0.0:*                          
-udp6       0      0 :::5999                 :::*         </tt>
+udp6       0      0 :::5999                 :::*         </code>
 
 3.vncpasswd<br>
-<tt>pi@bullseye:~ $ vncpasswd
+<code>pi@bullseye:~ $ vncpasswd
 VNC(R) Password Utility 7.5.1 (r50075) ARMv8-A (May 30 2023 13:19:26)
 Copyright (C) RealVNC Ltd.
 RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
@@ -77,10 +77,10 @@ pi@bullseye:~ $ sudo vncpasswd -service
 Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
-Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11</tt>
+Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11</code>
 ###################################################################################<br>
 【VSCode for Windows】<br>
-<tt>https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br></tt>
+<code>https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc<br></code>
 ###################################################################################<br>
 【VSCode　機能拡張】<br>
 <ul>
