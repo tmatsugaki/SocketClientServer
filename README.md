@@ -82,8 +82,8 @@ Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 ## VSCode 
-<a href="https://code.visualstudio.com/">ダウンロード</a>
-<a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">ご参考</a>
+<a href="https://code.visualstudio.com/">ダウンロード</a>><br>
+<a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">ご参考(Windows11)</a>
 ## VSCode機能拡張
 WSL (Windows)<br>
 C/C++v1.18.5 (共通)<br>
