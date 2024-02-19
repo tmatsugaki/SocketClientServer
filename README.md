@@ -1,3 +1,4 @@
+2024/02/20
 ## Raspberry Pi OSイメージャ（共通）
 <a href="https://www.raspberrypi.com/software/">ダウンロード</a><br>
 <a href="https://www.raspberrypi.com/software/">![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)</a><br>
