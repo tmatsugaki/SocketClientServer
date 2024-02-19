@@ -81,6 +81,8 @@ Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
+## VSCode （mac, debian系）
+brew や apt でインストールしてください。
 ## VSCode （Windows）
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">ご参考</a>
 ## VSCode機能拡張
