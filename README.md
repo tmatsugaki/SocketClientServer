@@ -97,7 +97,7 @@ Printv0.11.18 (共通)<br>
 Pylancev2024.2.2 (共通)<br>
 Pythonv2024.0.1 (共通)<br>
 Python Debuggerv2024.0.0 (共通)<br>
-## Windows11 WSLにLinuxをインストールし上記の手順を実施したのち、更に下記を実施することでWindows上にてクロスで開発・実行できる環境を構築する試み
+## Windows11 WSL上Linuxに、UNIX 同様の開発環境を構築する試み
 <a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb">USB デバイスを接続する</a>
 ※USBデバイスを bind/attach しただけでは Linux 上でデバイスは作成されません。
 <a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf">wsl2_linux_kernel_usbcam_enable_conf</a><br>
