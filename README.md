@@ -1,14 +1,14 @@
-## Raspberry Pi OS
+## Raspberry Pi OSイメージャ（共通）
 <a href="https://www.raspberrypi.com/software/">ダウンロード</a><br>
 <a href="https://www.raspberrypi.com/software/">![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)</a><br>
-## Packages
+## Packages（共通）
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake-dev<br>
 sudo apt install -y libboost-all-dev<br>
 sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br>
-## VNC Server
+## VNC Server（macOS）
 ### 0.(macOSのみ) raspi-config の インターフェースオプションで RealVNC を macOS に適合させる
 　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">ご参考</a>
 
@@ -81,20 +81,20 @@ Setting "Password" VNC parameter for Service Mode server
 Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
-## VSCode for Windows
+## VSCode （Windows）
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">ご参考</a>
 ## VSCode機能拡張
-WSL (Microsoft)<br>
-C/C++v1.18.5 (Microsoft)<br>
-C/C++ Extension Packv1.3.0 (Microsoft)<br>
-C/C++ Themesv2.0.0 (Microsoft)<br>
-CMake Toolsv1.17.15 (Microsoft)<br>
-Japanese Language Pack for Visual Studio (Microsoft)<br>
-Makefile Tools v0.8.22 プレビュー (Microsoft)<br>
-Printv0.11.18 (Microsoft)<br>
-Pylancev2024.2.2 (Microsoft)<br>
-Pythonv2024.0.1 (Microsoft)<br>
-Python Debuggerv2024.0.0 (Microsoft)<br>
+WSL (Windows)<br>
+C/C++v1.18.5 (共通)<br>
+C/C++ Extension Packv1.3.0 (共通)<br>
+C/C++ Themesv2.0.0 (共通)<br>
+CMake Toolsv1.17.15 (共通)<br>
+Japanese Language Pack for Visual Studio (共通)<br>
+Makefile Tools v0.8.22 プレビュー (共通)<br>
+Printv0.11.18 (共通)<br>
+Pylancev2024.2.2 (共通)<br>
+Pythonv2024.0.1 (共通)<br>
+Python Debuggerv2024.0.0 (共通)<br>
 ## Windows11 WSLにLinuxをインストールし上記の手順を実施したのち、更に下記を実施することでクロスで開発・実行できる環境を構築する試み
 <a href="https://learn.microsoft.com/ja-jp/windows/wsl/connect-usb">USB デバイスを接続する</a>
 ※USBデバイスを bind/attach しただけでは Linux 上でデバイスは作成されません。
