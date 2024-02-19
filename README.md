@@ -101,4 +101,4 @@ Python Debuggerv2024.0.0 (Microsoft)<br>
 <a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf">wsl2_linux_kernel_usbcam_enable_conf</a><br>
 <a href="https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf/blob/main/linux-msft-wsl-5.10.102.1/config">カーネルコンフィギュレーション</a><br>
 カーネルやローダブルモジュールの再構築が必要なのですが、Linux の V4L2 の GStreamer に関わる部分はデリケートなので熟慮が必要です。
-Windows11 の WSL2 で費やしたことが徒労に終わる可能性がありますから、デバイスを楽に扱えるクロス開発環境として PC上のネイティブ ubuntu 22.04 若しくは macOS を推奨します。
+Windows11 の WSL2 で費やしたことが徒労に終わる可能性がありますから、デバイスを楽に扱えるクロス開発環境として PC上のネイティブの ubuntu 22.04 若しくは macOS を推奨します。
