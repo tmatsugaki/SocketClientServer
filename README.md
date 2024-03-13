@@ -3,7 +3,7 @@
 <a href="https://www.raspberrypi.com/software/">ダウンロード</a><br>
 <a href="https://www.raspberrypi.com/software/">![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)</a><br>
 ## Packages
-【Debian/Ubuntu/Raspberry Pi OS】<br>
+【apt】<br>
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake<br>
 sudo apt install -y libboost-all-dev<br>
@@ -11,7 +11,7 @@ sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br>
 
-【macOS】<br>
+【brew】<br>
 brew install cmake<br>
 brew install boost<br>
 brew install opencv<br>
