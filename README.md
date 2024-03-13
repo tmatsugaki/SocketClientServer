@@ -120,7 +120,7 @@ Python Debuggerv2024.0.0 (共通)<br>
 カーネルやローダブルモジュールの再構築が必要なのですが、Linux の V4L2 の GStreamer に関わる部分はデリケートなので熟慮が必要です。
 Windows11 の WSL2 で費やしたことが徒労に終わる可能性がありますから、下記の何れもネイティブな UNIX の開発環境のご使用を推奨します。<br>
 
-・ラズパイOS(64-bit Kern6.1 Debian12 bookworm) + VNC<br>
+・ラズパイOS(64-bit Debian11　または Debian12) + VNC<br>
 ・PC上のネイティブの ubuntu 22.04<br>
 ・macOS<br>
 <br>
