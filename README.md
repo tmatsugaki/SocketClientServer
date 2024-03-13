@@ -3,7 +3,7 @@
 <a href="https://www.raspberrypi.com/software/">ダウンロード</a><br>
 <a href="https://www.raspberrypi.com/software/">![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)</a><br>
 ## Packages
-【Debian/Ubuntu/RaspiOS】<br>
+【Debian/Ubuntu/Raspberry Pi OS】<br>
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake<br>
 sudo apt install -y libboost-all-dev<br>
@@ -92,8 +92,14 @@ Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 ## VSCode 
+【Raspberry Pi OS】
+sudo apt update<br>
+sudo apt install code<br>
+
+【その他】
 <a href="https://code.visualstudio.com/">ダウンロード</a><br>
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">ご参考(Windows11)</a>
+
 ## VSCode機能拡張
 WSL (Windows11)<br>
 C/C++v1.18.5 (共通)<br>
