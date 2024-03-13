@@ -1,5 +1,5 @@
 2024/02/20
-## Raspberry Pi OSイメージャ（共通）
+## Raspberry Pi OSイメージャ（各OS共通）
 <a href="https://www.raspberrypi.com/software/">ダウンロード</a><br>
 <a href="https://www.raspberrypi.com/software/">![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)</a><br>
 ## Packages
@@ -18,7 +18,7 @@ brew install opencv<br>
 brew install cereal<br>
 brew install spdlog<br>
 
-## VNC Server（for macOS）
+## VNC Server（macOS用）
 ### 0.raspi-config の インターフェースオプションで RealVNC を macOS に適合させる
 　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">ご参考</a>
 
