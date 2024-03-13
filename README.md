@@ -92,11 +92,11 @@ Password:
 Verify:
 Successfully set "Password" VNC parameter in /root/.vnc/config.d/vncserver-x11
 ## VSCode 
-【Raspberry Pi OS】
+【Raspberry Pi OS】<br>
 sudo apt update<br>
 sudo apt install code<br>
 
-【その他】
+【その他】<br>
 <a href="https://code.visualstudio.com/">ダウンロード</a><br>
 <a href="https://zenn.dev/boiledorange73/articles/0056-wsl-vsc-gcc">ご参考(Windows11)</a>
 
