@@ -18,7 +18,7 @@ brew install opencv<br>
 brew install cereal<br>
 brew install spdlog<br>
 
-## VNC Server（macOS）
+## VNC Server（for macOS）
 ### 0.raspi-config の インターフェースオプションで RealVNC を macOS に適合させる
 　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">ご参考</a>
 
