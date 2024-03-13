@@ -2,13 +2,22 @@
 ## Raspberry Pi OSイメージャ（共通）
 <a href="https://www.raspberrypi.com/software/">ダウンロード</a><br>
 <a href="https://www.raspberrypi.com/software/">![Imager](https://github.com/tmatsugaki/SocketClientServer/assets/922740/c70e6cca-fb1a-46ef-8cdc-b0fe612486c4)</a><br>
-## Packages（共通）
+## Packages
+【Debian/Ubuntu/RaspiOS】<br>
 sudo apt install -y build-essential<br>
 sudo apt install -y cmake<br>
 sudo apt install -y libboost-all-dev<br>
 sudo apt install -y libopencv-dev<br>
 sudo apt install -y libcereal-dev<br>
 sudo apt install -y libspdlog-dev<br>
+
+【macOS】<br>
+brew install cmake<br>
+brew install boost<br>
+brew install opencv<br>
+brew install cereal<br>
+brew install spdlog<br>
+
 ## VNC Server（macOS）
 ### 0.raspi-config の インターフェースオプションで RealVNC を macOS に適合させる
 　<a href="https://daeudaeu.com/raspberry-pi-vnc-err/#confirm">ご参考</a>
